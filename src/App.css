@@ -1,0 +1,53 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.box {
+  margin: auto;
+  width: 11rem;
+  border: 3px solid grey;
+  padding: 10px;
+}
+
+.box2 {
+  margin: auto;
+  width: 11rem;
+  border: 3px solid grey;
+  padding: 10px;
+  height: 1.0rem;
+}
+
+input {
+  width: 4rem;
+  height: 4rem;
+}
+
+
+
+.display {
+  width: 10rem;
+
+  align-items: center;
+  text-align: center;
+}
