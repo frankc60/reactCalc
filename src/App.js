@@ -1,6 +1,6 @@
 import React from 'react';
-import Display from './components/Display'
-import Keypad from './components/Keypad'
+import Display from './components/Display';
+import Keypad from './components/Keypad';
 
 import logo from './logo.svg';
 import './App.css';
@@ -10,16 +10,16 @@ class App extends React.Component{
     super(props);
     this.state = {
       display1: "-",
-      display2: " "
-   } 
+      display2: " ",
+    };
   }
 
   clickHandler(e) {
     const val = e.target.value;
-    //alert("clicked " + val)
-    switch(val) {
+    // alert("clicked " + val)
+    switch (val) {
       case "=":
-        //alert("equals")
+        // alert("equals")
         let answer="n/a"
         try {
           answer = eval(this.state.display2);
@@ -30,7 +30,7 @@ class App extends React.Component{
           display1: answer,
         })
         break;
-      case "C": //clear 
+      case "C": // clear 
         this.setState({
           display1: "-",
           display2: ""
@@ -38,9 +38,9 @@ class App extends React.Component{
         
         break;
       default:
-        this.setState({    
+        this.setState({
           display2: this.state.display2 + val
-        })
+        });
         break;
     }
 
